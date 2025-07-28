@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 import random
 
+>>>>>>> feature-check-guess
 def get_player_guess():
     while True:
         try:
@@ -54,3 +57,4 @@ if __name__ == "__main__":
     print(check_guess(50, 30))
     print(check_guess(50, 70))
     print(check_guess(50, 50))
+>>>>>>> feature-check-guess
