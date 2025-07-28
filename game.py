@@ -1,14 +1,17 @@
-# --- Number Guessing Game ---
-# This is the template file for the collaborative Git tutorial.
-
 def get_player_guess():
+    while True:
+        try:
+            guess = int(input("Guess a number: "))
+            if 1 <= guess <= 100:
+                return guess
+            else:
+                print("Please enter a number between 1 and 100.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+def play_game():
     """
-    Task for Student 1:
-    1. Prompt the user to enter a number between 1 and 100.
-    2. Read the input from the user.
-    3. Convert the input to an integer.
-    4. Return the integer.
-    5. Add error handling for invalid input (e.g., text instead of a number).
+    The main function to run the game.
+    This part is already complete.
     """
-    # Student 1: Add your code here
-    pass
+    print("--- Welcome to the Number Guessing Game! ---")
+    print("I'm thinking of a number between 1 and 100.")
