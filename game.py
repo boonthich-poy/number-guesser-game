@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import random
 
->>>>>>> feature-check-guess
 def get_player_guess():
     while True:
         try:
@@ -27,7 +24,7 @@ def check_guess(secret_number, player_guess):
     elif player_guess > secret_number:
         return "high"
     else:
-        return "low",
+        return "low"
 
 def play_game():
     """
@@ -57,4 +54,4 @@ if __name__ == "__main__":
     print(check_guess(50, 30))
     print(check_guess(50, 70))
     print(check_guess(50, 50))
->>>>>>> feature-check-guess
+
